@@ -1,4 +1,4 @@
 //Mongo Database Connection 
 module.exports = {
-	db:'mongodb://nathanfry:Mollydog31@ds115758.mlab.com:15758/bookstore200343236'
+	//add you connection string here because im not putting mine on github
 }
