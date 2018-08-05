@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="container2">
+			<h1><%= title %></h1>
+			</div>
+		</header>
+		<section>
+			<form action="/books" method="post">
+				<fieldset>
+					<legend>Books Info</legend>
+					<div class="form-group">
+						<label for="title">Title</label>
+						<input type="text" class="form-control" id="book_title" name="title" placeholder="Your Book Title" required>
+					</div>
+					<div class="form-group">
+						<label for="cover">Cover</label>
+						<input type="text" class="form-control" id="book_cover" name="cover" placeholder="Is you book hardcover or paperback?" required>
+					</div>
+					<div class="form-group">
+						<label for="price">Price</label>
+						<input type="Number" class="form-control" id="book_price" name="price" placeholder="What is the price of your book in CAD?" step="0.01" min="0" required>
+					</div>
+				</fieldset>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary">Create Book</button>
+				</div>
+			</form>
+		</section>
+</body>
+</html>
